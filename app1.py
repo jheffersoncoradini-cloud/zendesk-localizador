@@ -6,6 +6,10 @@ print("APP1 ATUALIZADO RODANDO")
 
 app = Flask(__name__)
 
+@app.route("/", methods=["GET"])
+def home():
+    return "OK", 200
+    
 ZENDESK_SUBDOMAIN = "yberagroup"
 ZENDESK_EMAIL = "jhefferson@lojaybera.com.br"
 ZENDESK_API_TOKEN = "fTOL2XFQzDSDGwkVlHIJfxxDYaqTOM6WgXdRwdEb"
