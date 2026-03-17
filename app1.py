@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import requests
 import re
+import os
 
 print("APP1 ATUALIZADO RODANDO")
 
