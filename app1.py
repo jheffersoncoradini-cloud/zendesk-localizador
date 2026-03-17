@@ -10,9 +10,9 @@ app = Flask(__name__)
 def home():
     return "OK", 200
     
-ZENDESK_SUBDOMAIN = "yberagroup"
-ZENDESK_EMAIL = "jhefferson@lojaybera.com.br"
-ZENDESK_API_TOKEN = "fTOL2XFQzDSDGwkVlHIJfxxDYaqTOM6WgXdRwdEb"
+ZENDESK_SUBDOMAIN = os.environ.get("ZENDESK_SUBDOMAIN")
+ZENDESK_EMAIL = os.environ.get("ZENDESK_EMAIL")
+ZENDESK_API_TOKEN = os.environ.get("ZENDESK_TOKEN")
 
 CAMPO_PEDIDO_ID = 48132439975315
 
